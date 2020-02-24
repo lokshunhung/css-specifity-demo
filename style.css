@@ -18,6 +18,10 @@
    * - num-ids:   0
    * - num-class: 1 // also attributes, pseudo-classes
    * - num-elemt: 0 // also pseudo-elements
+   *
+   * Specificity only applies when the same element is targeted by **multiple declarations**.
+   * As per CSS rules, **directly targeted** elements will always take precedence over rules which an element inherits from its ancestor.
+   * reference: https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity
    */
   color: #f44336;
 }

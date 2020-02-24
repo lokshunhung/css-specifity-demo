@@ -15,6 +15,29 @@
           <span class="highlight">[highlighted portion: (red?)]</span>
           continued...
         </p>
+
+        <hr />
+
+        <p class="highlight">
+          <span>
+            Multiple declarations: `.highlight` NOT applied<br />
+            <small>(`#spa-page-1 .card p` is more specific and it overrides color: red from `.highlight`)</small>
+          </span>
+        </p>
+
+        <p>
+          <span class="highlight">
+            Directly targeted: `.highlight` applied<br />
+            <small>(This span is **directly targeted**, and it overrides color: green inherited from `#spa-page-1 .card p`)</small>
+          </span>
+        </p>
+
+        <div class="highlight">
+          <span>
+            Indirectly targeted: `.highlight` applied<br />
+            <small>(This span is indirectly targeted, but its parent does not have **multiple declarations**)</small>
+          </span>
+        </div>
       </div>
     </div>
 
