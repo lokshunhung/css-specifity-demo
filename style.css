@@ -1,11 +1,11 @@
-.blue {
+p.blue {
   /*
-   * specificity: (0, 0, 0, 1, 0)
+   * specificity: (0, 0, 0, 1, 1)
    * - important: 0
    * - is-inline: 0
    * - num-ids:   0
    * - num-class: 1 // also attributes, pseudo-classes
-   * - num-elemt: 0 // also pseudo-elements
+   * - num-elemt: 1 // also pseudo-elements
    */
   color: #29b6f6;
 }
