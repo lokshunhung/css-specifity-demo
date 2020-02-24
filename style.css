@@ -1,56 +1,4 @@
-.blue.blue {
-  /*
-   * specificity: (1, 0, 0, 2, 0)
-   * - important: 1
-   * - is-inline: 0
-   * - num-ids:   0
-   * - num-class: 2 // also attributes, pseudo-classes
-   * - num-elemt: 0 // also pseudo-elements
-   */
-  color: #29b6f6 !important;
-}
-
-.highlight {
-  /*
-   * specificity: (0, 0, 0, 1, 0)
-   * - important: 0
-   * - is-inline: 0
-   * - num-ids:   0
-   * - num-class: 1 // also attributes, pseudo-classes
-   * - num-elemt: 0 // also pseudo-elements
-   *
-   * Specificity only applies when the same element is targeted by **multiple declarations**.
-   * As per CSS rules, **directly targeted** elements will always take precedence over rules which an element inherits from its ancestor.
-   * reference: https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity
-   */
-  color: #f44336;
-}
-
-#spa-page-1 .card {
-  max-width: 800px;
-  margin: 0 auto;
-  border: 0;
-  padding: 24px;
-  border-radius: 4px;
-  box-shadow: 0 0 8px 8px rgba(0, 0, 0, 0.2);
-}
-#spa-page-1 .card h1 {
-  margin: 0;
-  padding: 0;
-  color: #660;
-}
-#spa-page-1 .card p {
-  /*
-   * specificity: (0, 0, 1, 1, 1)
-   * - important: 0
-   * - is-inline: 0
-   * - num-ids:   0
-   * - num-class: 1 // also attributes, pseudo-classes
-   * - num-elemt: 1 // also pseudo-elements
-   */
-  color: #880;
-}
-
+/* Card (block) */
 .card {
   max-width: 650px;
   margin: 0 auto;
@@ -59,19 +7,21 @@
   border-radius: 4px;
   box-shadow: 0 0 8px 8px rgba(0, 0, 0, 0.2);
 }
-.card h1 {
+
+/* Card: title (element) */
+.card__title {
   margin: 0;
   padding: 0;
   color: #666;
 }
-.card p {
-  /*
-   * specificity: (0, 0, 0, 1, 1)
-   * - important: 0
-   * - is-inline: 0
-   * - num-ids:   0
-   * - num-class: 1 // also attributes, pseudo-classes
-   * - num-elemt: 1 // also pseudo-elements
-   */
+
+/* Card: body (element) */
+.card__body {
   color: #888;
+}
+.card__body--blue {
+  color: #29b6f6;
+}
+.card__body--highlight {
+  color: #f44336;
 }

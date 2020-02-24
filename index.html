@@ -8,36 +8,13 @@
 
     <div id="spa-page-1">
       <div class="card">
-        <h1>Card title</h1>
-        <p>Body paragraph</p>
-        <p class="blue">
+        <h1 class="card__title">Card title</h1>
+        <p class="card__body">Body paragraph</p>
+        <p class="card__body card__body--blue">
           Body paragraph (blue?)
-          <span class="highlight">[highlighted portion: (red?)]</span>
+          <span class="card__body card__body--highlight">[highlighted portion: (red?)]</span>
           continued...
         </p>
-
-        <hr />
-
-        <p class="highlight">
-          <span>
-            Multiple declarations: `.highlight` NOT applied<br />
-            <small>(`#spa-page-1 .card p` is more specific and it overrides color: red from `.highlight`)</small>
-          </span>
-        </p>
-
-        <p>
-          <span class="highlight">
-            Directly targeted: `.highlight` applied<br />
-            <small>(This span is **directly targeted**, and it overrides color: green inherited from `#spa-page-1 .card p`)</small>
-          </span>
-        </p>
-
-        <div class="highlight">
-          <span>
-            Indirectly targeted: `.highlight` applied<br />
-            <small>(This span is indirectly targeted, but its parent does not have **multiple declarations**)</small>
-          </span>
-        </div>
       </div>
     </div>
 
