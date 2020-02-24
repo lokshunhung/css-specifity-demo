@@ -5,6 +5,7 @@
     "oderwat.indent-rainbow",
 
     // Development
+    "ritwickdey.live-sass",
     "ritwickdey.liveserver"
 
     //

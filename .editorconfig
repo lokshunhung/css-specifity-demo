@@ -7,7 +7,7 @@ end_of_line = lf
 indent_style = space
 indent_size = 2
 
-[*.css]
+[*.{css,scss}]
 max_line_length = 200
 end_of_line = lf
 indent_style = space
