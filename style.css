@@ -10,6 +10,31 @@
   color: #29b6f6;
 }
 
+#spa-page-1 .card {
+  max-width: 800px;
+  margin: 0 auto;
+  border: 0;
+  padding: 24px;
+  border-radius: 4px;
+  box-shadow: 0 0 8px 8px rgba(0, 0, 0, 0.2);
+}
+#spa-page-1 .card h1 {
+  margin: 0;
+  padding: 0;
+  color: #660;
+}
+#spa-page-1 .card p {
+  /*
+   * specificity: (0, 0, 1, 1, 1)
+   * - important: 0
+   * - is-inline: 0
+   * - num-ids:   0
+   * - num-class: 1 // also attributes, pseudo-classes
+   * - num-elemt: 1 // also pseudo-elements
+   */
+  color: #880;
+}
+
 .card {
   max-width: 650px;
   margin: 0 auto;
