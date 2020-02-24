@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    // Editor
+    "editorconfig.editorconfig",
+    "oderwat.indent-rainbow",
+
+    // Development
+    "ritwickdey.liveserver"
+
+    //
+  ]
+}

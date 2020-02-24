@@ -1,0 +1,14 @@
+[*]
+charset = utf-8
+
+[*.html]
+max_line_length = 200
+end_of_line = lf
+indent_style = space
+indent_size = 2
+
+[*.css]
+max_line_length = 200
+end_of_line = lf
+indent_style = space
+indent_size = 2
