@@ -10,6 +10,18 @@
   color: #29b6f6 !important;
 }
 
+.highlight {
+  /*
+   * specificity: (0, 0, 0, 1, 0)
+   * - important: 0
+   * - is-inline: 0
+   * - num-ids:   0
+   * - num-class: 1 // also attributes, pseudo-classes
+   * - num-elemt: 0 // also pseudo-elements
+   */
+  color: #f44336;
+}
+
 #spa-page-1 .card {
   max-width: 800px;
   margin: 0 auto;
